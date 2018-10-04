@@ -1,0 +1,12 @@
+1. 二元运算符左右两边加空格
+	a = 4 + 5;
+2. if 和 for 与括号之间有空格
+	for (i = i;i < n;i++) 
+3. 如果上一句if中有return 那么下面的就不用else
+	if (a == target){
+		return 0;
+	}
+	if (a < target){
+		return 1;
+	}
+	return 2;
