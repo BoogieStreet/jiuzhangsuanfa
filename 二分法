@@ -32,31 +32,31 @@
   2. 有序数组，含重复元素，寻找target的位置，且是最前位置
      例子：{1,2,2,3,3,4,5,5} target=3 return 3
      代码：
-	 	public int binarySearch(int[] nums, int target) {
-      
-		   if(nums == null || nums.length == 0){
-			   return -1;
-		   }
-		   int start = 0;
-		   int end = nums.length - 1;
-		   while (start + 1 < end){
-			   int mid = start + (end - start) / 2;
-			   if (nums[mid] == target){
-				   end = mid;
-			   }
-			   else if (nums[mid] > target){
-				   end = mid - 1;
-			   }
-			   else{
-				   start = mid + 1;
-			   }
-		   }
+	public int binarySearch(int[] nums, int target) {
 
-		   if (nums[start] == target){
-			   return start;
-		   }
-		   if (nums[end] == target){
-			   return end;
-		   }
+	   if(nums == null || nums.length == 0){
 		   return -1;
+	   }
+	   int start = 0;
+	   int end = nums.length - 1;
+	   while (start + 1 < end){
+		   int mid = start + (end - start) / 2;
+		   if (nums[mid] == target){
+			   end = mid;
+		   }
+		   else if (nums[mid] > target){
+			   end = mid - 1;
+		   }
+		   else{
+			   start = mid + 1;
+		   }
+	   }
+
+	   if (nums[start] == target){
+		   return start;
+	   }
+	   if (nums[end] == target){
+		   return end;
+	   }
+	   return -1;
     }
