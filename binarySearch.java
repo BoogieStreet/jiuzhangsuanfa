@@ -10,7 +10,7 @@ public class Solution {
         }
         
         int start = 0, end = nums.length - 1;
-        // 要点1: start + 1 < end
+        // 要点1: start + 1 < end，因为mid 是中间偏左的，如果最后锁定的范围 start和end 相邻，start就会无穷的停在原地 超时
         while (start + 1 < end) {
 	    // 要点2：start + (end - start) / 2
             int mid = start + (end - start) / 2;
