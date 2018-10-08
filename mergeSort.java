@@ -1,3 +1,6 @@
+//归并排序虽然是nlogn的时间复杂度，但是它需要用到额外的O(n)的空间
+//这是它不优于快排的原因
+
 public class Solution {
    
     public void sortIntegers2(int[] A) {
