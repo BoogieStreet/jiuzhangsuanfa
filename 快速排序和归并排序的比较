@@ -1,0 +1,22 @@
+
+
+
+quicksort 
+1. 平均时间复杂度是O(nlogn) 
+2. 最坏时间复杂度O(n^2) 
+   eg: 已经排好的array，且选择第一个数为pivot
+       1 2 3 4 5
+       经过一个O(n)  分成一个quicksort({1}) quicksort({2 3 4 5})
+       经过一个O(n)  分成quicksort({2}) quicksort({3 4 5}
+3. in-place sorting
+4. unstable 
+5. DC :T(n)=2T(n/2)+O(n)  先O(n)//sort 后2T(n/2)//divide
+       
+mergesort
+1. 平均时间复杂度是O(nlogn) 
+2. 最坏时间复杂度O(nlogn)
+3. O(n) extra space 
+4. stable 
+5. DC :T(n)=2T(n/2)+O(n)  先2T(n/2)//divide 后O(n)//merge 
+       
+     
