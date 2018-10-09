@@ -31,10 +31,10 @@ public class Solution {
                 right--;
             }
         }
-        if(n<=nums[right]){
+        if(n<=right){
             return quickSelect(nums,start,right,n);
         }
-        if(n>=nums[left]){
+        if(n>=left){
             return quickSelect(nums,left,end,n);
         }
         return nums[n];
